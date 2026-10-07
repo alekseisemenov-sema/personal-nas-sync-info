@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal NAS Sync</title>
+<style>body{max-width:44rem;margin:4rem auto;padding:0 1.5rem;font:18px/1.65 system-ui,sans-serif;color:#1d2939}h1{line-height:1.2}a{color:#155eef}footer{margin-top:3rem;font-size:.9rem}</style>
+<main>
+<h1>Personal NAS Sync</h1>
+<p>A private tool for synchronizing its owner's files between a personal NAS and Google Drive. It uses rclone, with a systemd service running on the owner's NAS.</p>
+<p>The configured sync covers a designated folder and its version archive. It transfers additions and edits in both directions, preserves overwritten versions, and keeps dated backups. Two media folders are excluded.</p>
+<h2>Why Google Drive access is requested</h2>
+<p>Google Drive read and write access is needed to synchronize files added through Drive's website as well as files uploaded by the sync tool. Google describes this permission as access to see, edit, create and delete all Drive files. The installed service is configured to operate on the designated sync folder and version archive.</p>
+<p>This application is for the owner's personal use. It does not offer account registration or a public file-sharing service.</p>
+<footer><a href="privacy.html">Privacy and data use</a> · <a href="usage.html">Usage information</a></footer>
+</main>
+</html>
